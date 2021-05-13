@@ -1,8 +1,8 @@
 import dotenv from 'dotenv'
 dotenv.config()
 
-import ormConfig from "./config/typeorm.config"
-import apiv1 from "./api/v1/routes"
+import ormConfig from "@config/typeorm.config"
+import apiv1 from "@api/v1/routes"
 import "reflect-metadata"
 import { createConnection } from "typeorm"
 import express from "express";
