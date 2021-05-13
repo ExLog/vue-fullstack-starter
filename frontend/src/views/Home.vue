@@ -9,8 +9,6 @@
 </template>
 
 <script setup lang="ts">
-import Counter from "../components/Counter.vue"
-import Logo from "../components/Logo.vue"
 import { useRoute } from "vue-router"
 
 const route = useRoute()
