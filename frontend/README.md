@@ -1,12 +1,14 @@
 # Vue 3 + Typescript + Vite
 
+## Plugins used :
+
+- [vite-plugin-components](https://github.com/antfu/vite-plugin-components) - On-demand components auto-importing
+- [vite-plugin-windicss](https://github.com/windicss/vite-plugin-windicss) - Windi CSS integration
+- [vite-plugin-compress](https://github.com/alloc/vite-plugin-compress) - Compress bundle + assets.
+
 ### Using `<script setup>`
 
-[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
-
-## Type Support For `.vue` Imports in TS
-
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
+[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur.
 
 ### If Using Volar
 
